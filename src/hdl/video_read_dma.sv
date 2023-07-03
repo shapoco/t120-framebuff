@@ -73,8 +73,6 @@ wire w_axi_vsync;
 cdc_2ff #(
     .POLARITY(1)
 ) u_cdc_vsync (
-    .in_clk     (video_clk  ), // input   
-    .in_rstn    (video_rstn ), // input   
     .in_data    (w_vid_vsync), // input   
     .out_clk    (axi_clk    ), // input   
     .out_rstn   (axi_rstn   ), // input   
